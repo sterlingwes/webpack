@@ -1,0 +1,3 @@
+#!/bin/bash
+
+webpack --entry ./entry.js --output-filename bundle-02.js --output-path ./dist --output-public-path "02 Loaders/dist/" --display-modules

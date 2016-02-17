@@ -1,0 +1,3 @@
+#!/bin/bash
+
+webpack entry.js bundle-01.js

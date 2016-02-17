@@ -1,0 +1,11 @@
+.cards
+  each card in cards
+    .card(class= styles.card)
+      .header(class= styles.header, style= colorStyle(card.colors))
+      .title(class= styles.title)= card.name
+      .numbers(class= styles.numbers)
+        .cost= card.manaCost
+        .power= card.power
+        .toughness= card.toughness
+      .type(class= styles.type)= card.type
+      .text= card.text

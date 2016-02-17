@@ -1,0 +1,47 @@
+{
+  "name": "webpack-experiments",
+  "version": "1.0.0",
+  "description": "Various Webpack Experiments",
+  "main": "index.js",
+  "scripts": {
+    "build01": "./node_modules/.bin/webpack --entry ./entry.js --output-filename ./bundle-01.js --context ./01\\ CommonJS",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sterlingwes/webpack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sterlingwes/webpack/issues"
+  },
+  "homepage": "https://github.com/sterlingwes/webpack#readme",
+  "standard": {
+    "ignore": [
+      "bundle*",
+      "demo.js"
+    ]
+  },
+  "dependencies": {
+    "autoprefixer": "^6.3.3",
+    "babel-core": "^6.5.2",
+    "babel-loader": "^6.2.2",
+    "browser-sync": "^2.11.1",
+    "browser-sync-webpack-plugin": "^1.0.1",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "jade": "^1.11.0",
+    "jade-loader": "^0.8.0",
+    "json-loader": "^0.5.4",
+    "postcss-loader": "^0.8.1",
+    "riot": "^2.3.15",
+    "script-loader": "^0.6.1",
+    "style-loader": "^0.13.0",
+    "stylus-loader": "^1.5.1",
+    "tag-loader": "^0.3.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.13"
+  }
+}
