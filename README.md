@@ -1,10 +1,26 @@
 # webpack
+
 Various Webpack Experiments
 
-### Start
+---
 
-`npm install`
-`npm install -g webpack`
+Install dependencies
+
+* `npm run setup`
+
+Build the sub projects
+
+* `npm run build`
+
+Start the demo
+
+* `npm start`
+
+Clean up built files?
+
+* `npm run clean`
+
+---
 
 ## Landscape
 
@@ -29,6 +45,8 @@ Where the wild things are.
 * [Browserify](http://browserify.org)
 * [Webpack](http://webpack.github.io)
 * [SystemJS](https://github.com/systemjs/systemjs)
+
+---
 
 ## AMD vs. Common.js vs ES6
 

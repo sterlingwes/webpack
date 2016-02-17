@@ -4,7 +4,16 @@
   "description": "Various Webpack Experiments",
   "main": "index.js",
   "scripts": {
-    "build01": "./node_modules/.bin/webpack --entry ./entry.js --output-filename ./bundle-01.js --context ./01\\ CommonJS",
+    "start": "webpack --watch",
+    "setup": "npm install && npm install -g webpack",
+    "build1": "cd \"01 CommonJS\" && ./build",
+    "clean1": "rm -f \"01 CommonJS/bundle-01.js\"",
+    "build2": "cd \"02 Loaders\" && ./build",
+    "clean2": "rm -rf \"02 Loaders/dist\"",
+    "build3": "cd \"03 Async\" && webpack",
+    "clean3": "rm -rf \"03 Async/dist\"",
+    "build": "npm run build1 && npm run build2 && npm run build3",
+    "clean": "npm run clean1 && npm run clean2 && npm run clean3",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
