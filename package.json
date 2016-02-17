@@ -13,7 +13,7 @@
     "build3": "cd \"03 Async\" && webpack",
     "clean3": "rm -rf \"03 Async/dist\"",
     "build": "npm run build1 && npm run build2 && npm run build3",
-    "clean": "npm run clean1 && npm run clean2 && npm run clean3",
+    "clean": "rm -rf demo/demo.js && npm run clean1 && npm run clean2 && npm run clean3",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

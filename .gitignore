@@ -35,3 +35,5 @@ node_modules
 dist/*
 
 bundle*
+
+demo/demo.js
