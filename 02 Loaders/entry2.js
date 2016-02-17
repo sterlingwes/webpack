@@ -1,3 +1,6 @@
+/*
+ * demonstrates extracted css
+ */
 var render = require('./render')
 var style = require('./view.styl')
 var cat = require('file!./catjiff.gif')

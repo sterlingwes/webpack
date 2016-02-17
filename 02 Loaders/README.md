@@ -1,7 +1,20 @@
-*Inline CSS*
+Here we demonstrate:
 
-* Run `./build`
+* Using loaders inline vs. pattern matched
+* How loaders make Webpack a hybrid build / runtime tool
+* Two implementations: webpack cli vs. webpack.config (& potential conflicts)
+* Modular / localized CSS
+* Inline styles vs. stylesheets
+* Inline images
+* How plugins are different
 
-*Extracted CSS*
+Build / Config Files:
 
-* Run `webpack --config webpack.entry2.js`
+* `build` - compile with inline CSS
+* `webpack --config webpack.entry2.js` - compile with extracted CSS
+
+App Files:
+
+* `entry.js` - entry for build #1
+* `entry2.js` - entry for build #2
+* `render.js`

@@ -13,6 +13,9 @@ exports.subset = function objectSubset (obj, amount) {
   })
 }
 
+/*
+ * this becomes a no-op when DEBUG=true && webpack bundle is minified
+ */
 exports.logger = function (method, message) {
   if (!DEBUG) return
   console[method].call(console, message)

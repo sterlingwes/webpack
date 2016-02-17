@@ -1,3 +1,6 @@
+/*
+ * demonstrates code splitting!
+ */
 var styles = require('./cards.styl')
 var container = require('./view.jade')
 var cardTemplate = require('./cards.jade')

@@ -1,5 +1,9 @@
 var view = require('jade!./view.jade')
 
+/*
+ * - cat (string) path to our cat gif
+ * - style (object) mapping for our hashed selector identities
+ */
 module.exports = function (cat, style) {
   var html = view({
     message: 'Hello Webpack',

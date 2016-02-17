@@ -9,6 +9,11 @@ function render (printVal) {
   h1.innerHTML = printVal || modules.math.get()
 }
 
+/*
+ * when a button gets clicked perform the action defined in ./buttons.js
+ *
+ * - btn (object) with module and action keys
+ */
 function getClickHandler (btn) {
   return function () {
     var printVal = modules[btn.module][btn.action]()
@@ -16,6 +21,11 @@ function getClickHandler (btn) {
   }
 }
 
+/*
+ * our module's "exposed API"
+ *
+ * kicks off our rendering & sets up button event listeners
+ */
 module.exports = function () {
   var div = document.createElement('div')
   div.id = 'topic01'
