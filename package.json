@@ -12,6 +12,7 @@
     "clean2": "rm -rf \"02 Loaders/dist\"",
     "build3": "cd \"03 Async\" && webpack",
     "clean3": "rm -rf \"03 Async/dist\"",
+    "start4": "cd \"04 HMR\" && ../node_modules/.bin/webpack-dev-server --hot --inline --port 8081",
     "build": "npm run build1 && npm run build2 && npm run build3",
     "clean": "rm -rf demo/demo.js && npm run clean1 && npm run clean2 && npm run clean3",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -51,6 +52,7 @@
     "stylus-loader": "^1.5.1",
     "tag-loader": "^0.3.0",
     "url-loader": "^0.5.7",
-    "webpack": "^1.12.13"
+    "webpack": "^1.12.13",
+    "webpack-dev-server": "^1.14.1"
   }
 }

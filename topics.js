@@ -9,12 +9,16 @@ var fs = require('fs')
  */
 function findBundle (dir, path) {
   if (!path) path = ''
-  var files = fs.readdirSync('./' + dir + (path ? '/' + path : ''))
-  var bundle = files.filter(function (file) {
-    return /^bundle/.test(file)
-  })
-  if (!bundle.length) return
-  return path + '/' + bundle[0]
+  var files
+  try {
+    files = fs.readdirSync('./' + dir + (path ? '/' + path : ''))
+    var bundle = files.filter(function (file) {
+      return /^bundle/.test(file)
+    })
+    if (!bundle.length) return
+    return path + '/' + bundle[0]
+//
+  } catch (e) { /* ha! don't care! */ }
 }
 
 /*
@@ -34,7 +38,7 @@ module.exports = function () {
     .reduce(function (hash, dir) {
       var bundle = findBundle('./' + dir)
       if (!bundle) bundle = findBundle('./' + dir, 'dist')
-      hash[dir] = bundle
+      if (bundle) hash[dir] = bundle
       return hash
     }, {})
 }

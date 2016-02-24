@@ -1,7 +1,5 @@
 /* globals TOPICS */
 
-console.log(TOPICS)
-
 var topics = Object.keys(TOPICS).map(function (dir) {
   var bundle = TOPICS[dir]
   return {
